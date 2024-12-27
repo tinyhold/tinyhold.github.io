@@ -60,8 +60,14 @@
             <a href="mailto:dylan@tinyhold.be">dylan@tinyhold.be</a>
         </div>
         <div>
-            BE0743477878 Tiny Hold B.V. &copy; 2024
+            BE0743477878 Tiny Hold B.V. &copy; <span id="current-year"></span>
         </div>
+        <script>
+        
+            const yearElement = document.getElementById('current-year');
+            const currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        </script>
     </div>
 </body>
 
